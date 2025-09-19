@@ -81,7 +81,7 @@
 </td>
 <td align="center" width="33%">
 
-<img src="https://raw.githubusercontent.com/Project-OSRM/osrm-frontend/master/images/osrm-logo.svg" alt="OSRM Logo" width="120" />
+<img src="Open_Source_Routing_Machine_logo.png" alt="OSRM Logo" width="120" />
 
 #### 🗺️ **Route Optimization**
 **OSRM integration** for calculating optimal routes with real-time traffic considerations and alternative path suggestions
@@ -555,7 +555,7 @@ demonstration
 </td>
 <td align="center" width="50%">
 
-<img src="https://raw.githubusercontent.com/Project-OSRM/osrm-frontend/master/images/osrm-logo.svg" alt="OSRM" width="150" />
+<img src="Open_Source_Routing_Machine_logo.png" alt="OSRM" width="150" />
 
 **Open Source Routing Machine**  
 *High-performance routing engine*  
