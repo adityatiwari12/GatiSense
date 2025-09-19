@@ -73,7 +73,7 @@
 <tr>
 <td align="center" width="33%">
 
-<img src="https://xgboost.readthedocs.io/en/stable/_images/logo.png" alt="XGBoost Logo" width="120" />
+<img src="XGBoost_logo.svg" alt="XGBoost Logo" width="120" />
 
 #### 🤖 **ML Predictions**
 **XGBoost/Random Forest** models trained on NYC Taxi Trip Duration dataset for accurate **travel time prediction** between any two NYC points
@@ -407,7 +407,7 @@ docker-compose up -d
 <td align="center" width="50%">
 
 #### 🌟 **XGBoost Model**
-<img src="https://xgboost.readthedocs.io/en/stable/_images/logo.png" alt="XGBoost" width="150" />
+<img src="XGBoost_logo.svg" alt="XGBoost" width="150" />
 
 🎯 **Accuracy**: 94.2%  
 ⚡ **Prediction Time**: <50ms  
