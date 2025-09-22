@@ -100,7 +100,6 @@
 
 <div align="center">
 
-### 💡 **NYC Taxi Trip Duration Analysis**
 
 </div>
 
