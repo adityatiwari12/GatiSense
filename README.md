@@ -22,7 +22,6 @@
 
 ## 🌟 Transform Urban Mobility with Intelligence
 
-*Full-stack AI-powered web application leveraging NYC Taxi Trip Duration dataset for smart traffic insights*
 
 </div>
 
@@ -30,7 +29,6 @@
 
 ## 🎯 **Project Overview**
 
-> **A comprehensive AI-powered system that predicts travel times and optimizes routes using the NYC Taxi Trip Duration dataset from Kaggle, featuring dual dashboards for citizens and city officials.**
 
 <table>
 <tr>
@@ -42,7 +40,6 @@
 - 🚗 Optimal route recommendations with ETA
 - ⏰ Real-time travel time predictions
 - 💰 Route efficiency comparisons
-- 📱 Interactive NYC map interface
 
 </td>
 <td width="50%">
@@ -76,7 +73,6 @@
 <img src="XGBoost_logo.svg" alt="XGBoost Logo" width="120" />
 
 #### 🤖 **ML Predictions**
-**XGBoost/Random Forest** models trained on NYC Taxi Trip Duration dataset for accurate **travel time prediction** between any two NYC points
 
 </td>
 <td align="center" width="33%">
@@ -113,10 +109,7 @@
 <td align="center" width="50%">
 
 ### 📈 **Dataset Insights**
-<img src="https://www.kaggle.com/static/images/site-logo.png" alt="Kaggle Logo" width="150" />
 
-📊 **Trip Records**: 1.4M+ detailed entries  
-🗽 **Coverage**: Complete NYC area  
 ⏱️ **Duration Data**: Pickup to dropoff times  
 📍 **Coordinates**: Precise lat/lng locations  
 🎯 **Model Accuracy**: 94% ETA precision
@@ -139,7 +132,7 @@
 <div align="center">
 
 ### 🎉 **Key Performance Metrics**
-⚡ **<2s Response Time** | 🎯 **94% ETA Accuracy** | 📊 **100% NYC Coverage** | 🔄 **99.9% Uptime**
+⚡ **<2s Response Time** | 🎯 **94% ETA Accuracy** | 🔄 **99.9% Uptime**
 
 </div>
 
@@ -183,9 +176,8 @@ OSRM Integration
 
 **AI/ML**  
 XGBoost  
-Random Forest  
-Scikit-learn  
-Joblib Models
+Ultralytics
+OpenCV 
 
 </td>
 <td align="center" width="20%">
@@ -195,9 +187,6 @@ Joblib Models
 **Mapping**  
 Leaflet.js  
 OpenStreetMap  
-OSRM Routing  
-Traffic Heatmaps
-
 </td>
 <td align="center" width="20%">
 
@@ -206,8 +195,6 @@ Traffic Heatmaps
 **DevOps**  
 Docker  
 Streamlit  
-GitHub Pages  
-Model Storage
 
 </td>
 </tr>
@@ -225,15 +212,15 @@ Model Storage
 
 ```mermaid
 graph TD
-    A[📊 NYC Taxi Trip Duration Dataset] --> B[🔧 Data Preprocessing & Cleaning]
+    A[📊 COCO Dataset] --> B[🔧 Data Preprocessing & Cleaning]
     B --> C[⚙️ Feature Engineering: Distance, Time, Routes]
-    C --> D[🤖 ML Models: XGBoost/Random Forest Training]
+    C --> D[🤖 ML Models: Ultralytics(YoloV8) and OpenCV]
     D --> E[💾 Model Storage with Joblib]
     E --> F[🗺️ OSRM Route Optimization Integration]
     F --> G[👥 Citizen & Delivery Dashboard]
     F --> H[🏛️ City Officials Dashboard]
     
-    G --> I[📊 Route Recommendations]
+    G --> I[📊 Traffic Density]
     G --> J[⏰ ETA Predictions]
     G --> K[💰 Efficiency Analysis]
     
@@ -249,61 +236,6 @@ graph TD
 
 ---
 
-## 📁 **Project Structure**
-
-```
-🚦 GatiSense/
-├── 📊 data/
-│   ├── nyc_taxi_trip_duration.csv     # Kaggle Dataset
-│   ├── processed/                     # Cleaned & Feature Engineered Data
-│   └── osrm/                         # OSRM Map Data & Routing Files
-├── 📓 notebooks/
-│   ├── 01_data_exploration.ipynb      # EDA & Dataset Analysis
-│   ├── 02_feature_engineering.ipynb  # Distance, Time Features
-│   └── 03_model_training.ipynb       # XGBoost/RF Training
-├── 🤖 models/
-│   ├── travel_time_xgboost.pkl       # Trained XGBoost Model (Joblib)
-│   ├── travel_time_rf.pkl            # Random Forest Model
-│   └── model_metrics.json            # Performance Metrics
-├── 🔧 backend/
-│   ├── 🌐 api/
-│   │   ├── routes.py                 # Route Optimization Endpoints
-│   │   ├── predictions.py            # ML Prediction APIs
-│   │   └── analytics.py              # Traffic Analytics APIs
-│   ├── 🧠 ml/
-│   │   ├── model_loader.py           # Joblib Model Loading
-│   │   └── prediction_service.py     # ML Inference Service
-│   ├── 🗺️ routing/
-│   │   └── osrm_client.py            # OSRM Integration
-│   └── main.py                       # FastAPI/Flask App
-├── 🎨 frontend/
-│   ├── 👥 citizen-dashboard/          # React App for Citizens
-│   │   ├── components/
-│   │   │   ├── RouteMap.jsx          # Leaflet Map Component
-│   │   │   ├── ETACalculator.jsx     # Travel Time Display
-│   │   │   └── RouteComparison.jsx   # Alternative Routes
-│   │   └── pages/
-│   │       └── Dashboard.jsx         # Main Citizen Interface
-│   ├── 🏛️ officials-dashboard/       # React App for Officials
-│   │   ├── components/
-│   │   │   ├── HeatmapView.jsx       # Traffic Heatmaps
-│   │   │   ├── BottleneckAnalysis.jsx # Congestion Analysis
-│   │   │   └── PolicyInsights.jsx    # Planning Insights
-│   │   └── pages/
-│   │       └── Analytics.jsx         # Main Officials Interface
-│   └── 🎯 shared/
-│       ├── hooks/                    # Custom React Hooks
-│       └── utils/                    # Utility Functions
-├── 📚 docs/
-│   ├── API_DOCUMENTATION.md          # FastAPI Endpoints
-│   ├── DATASET_ANALYSIS.md           # NYC Taxi Data Insights
-│   └── DEPLOYMENT_GUIDE.md           # Setup Instructions
-├── 🎬 demo/
-│   ├── citizen_dashboard_demo.mp4    # Citizen Interface Demo
-│   ├── officials_dashboard_demo.mp4  # Officials Interface Demo
-│   └── screenshots/                  # UI Screenshots
-└── 📋 README.md                      # Project Documentation
-```
 
 ---
 
@@ -321,8 +253,6 @@ graph TD
 
 #### 👥 **Citizen & Delivery Dashboard**
 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&auto=format&q=80" alt="Driver Interface" style="border-radius: 12px; border: 3px solid #4CAF50;" />
-
-✅ **Interactive Pickup/Dropoff Selection**  
 🎯 **Best Route with Real-time ETA**  
 🔄 **Alternative Route Suggestions**  
 💰 **Trip Efficiency & Cost Analysis**  
@@ -337,7 +267,6 @@ graph TD
 <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&auto=format&q=80" alt="Analytics Dashboard" style="border-radius: 12px; border: 3px solid #FF9800;" />
 
 📊 **Aggregated Traffic Heatmaps**  
-🕒 **Peak vs Off-Peak Insights**  
 🚩 **Bottleneck Identification**  
 📈 **Long-term Planning Analytics**  
 🏗️ **Infrastructure Improvement Areas**
@@ -360,30 +289,6 @@ graph TD
 
 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" width="40" height="40" />
 
-```bash
-# 🔄 Clone the repository
-git clone https://github.com/yourusername/gatisense.git
-cd gatisense
-
-# 📊 Download NYC Taxi Dataset from Kaggle
-kaggle competitions download -c nyc-taxi-trip-duration
-unzip nyc-taxi-trip-duration.zip -d data/
-
-# 🤖 Train ML Models
-python notebooks/03_model_training.py
-# Models saved to models/ directory using joblib
-
-# 🗺️ Setup OSRM Server (Local)
-docker run -t -i -p 5000:5000 -v $(pwd)/osrm:/data osrm/osrm-backend osrm-routed --algorithm mld /data/new-york-latest.osrm
-
-# 🐳 Run Full Application
-docker-compose up -d
-
-# 🌐 Access Dashboards
-# Citizen Dashboard: http://localhost:3000
-# Officials Dashboard: http://localhost:3001  
-# FastAPI Docs: http://localhost:8000/docs
-```
 
 <div align="center">
 
@@ -443,46 +348,7 @@ docker-compose up -d
 
 </div>
 
-```python
-# 🚗 Travel Time Prediction
-POST /api/v1/predict/travel-time
-{
-  "pickup_lat": 40.7128,
-  "pickup_lng": -74.0060,
-  "dropoff_lat": 40.7589,
-  "dropoff_lng": -73.9851,
-  "pickup_datetime": "2024-01-15T14:30:00"
-}
 
-# 🗺️ Route Optimization (OSRM)
-GET /api/v1/routes/optimize
-{
-  "pickup": [40.7128, -74.0060],
-  "dropoff": [40.7589, -73.9851],
-  "alternatives": true
-}
-
-# 📊 Traffic Analytics
-GET /api/v1/analytics/heatmap
-{
-  "area_bounds": {
-    "north": 40.9176,
-    "south": 40.4774,
-    "east": -73.7004,
-    "west": -74.2591
-  },
-  "time_period": "peak_hours"
-}
-
-# 🚩 Bottleneck Analysis
-GET /api/v1/analytics/bottlenecks
-{
-  "severity_threshold": 0.8,
-  "time_range": "last_30_days"
-}
-```
-
----
 
 ## 🎥 **Demo & Deliverables**
 
@@ -547,10 +413,8 @@ demonstration
 
 <img src="https://www.kaggle.com/static/images/site-logo.png" alt="Kaggle" width="150" />
 
-**NYC Taxi Trip Duration Dataset**  
+COCO Dataset
 *Primary data source for ML training*  
-**1.4M+ trip records with pickup/dropoff coordinates**  
-[🔗 Dataset Link](https://www.kaggle.com/c/nyc-taxi-trip-duration)
 
 </td>
 <td align="center" width="50%">
@@ -572,11 +436,7 @@ demonstration
 
 <div align="center">
 
-### 🌟 **Vision & Mission**
 
-> *"Leveraging the power of NYC's comprehensive taxi dataset to build intelligent traffic solutions that reduce urban congestion and improve mobility for millions of commuters."*
-
-<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=200&fit=crop&auto=format&q=80" alt="Team Development" />
 
 ### 🏆 **Core Values**
 🎯 **Data-Driven Innovation** | 🤝 **Open Source Collaboration** | 📊 **Predictive Analytics** | 🌱 **Urban Sustainability**
@@ -589,11 +449,6 @@ demonstration
 
 <div align="center">
 
-### 🚀 **Join the Movement**
-
-<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="60" height="60" />
-
-</div>
 
 We welcome contributions from data scientists, full-stack developers, and urban planners!
 
@@ -624,7 +479,7 @@ We welcome contributions from data scientists, full-stack developers, and urban 
 
 <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=100&fit=crop&crop=entropy&auto=format&q=80" alt="NYC Traffic Banner" style="border-radius: 15px;" />
 
-## 🚦 *"From NYC taxi data to smarter city mobility"* 🚦
+## 🚦 *"GatiSense"* 🚦
 
 **Transforming urban transportation through machine learning and intelligent routing**
 
