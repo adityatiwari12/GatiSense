@@ -678,12 +678,8 @@ gitgraph
 
 ### 🌐 Connect With Us
 
-[![Website](https://img.shields.io/badge/Website-gatisense.ai-blue?style=for-the-badge&logo=google-chrome)](https://gatisense.ai)
-[![Email](https://img.shields.io/badge/Email-contact@gatisense.ai-red?style=for-the-badge&logo=gmail)](mailto:contact@gatisense.ai)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-GatiSense-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/company/gatisense)
-[![Twitter](https://img.shields.io/badge/Twitter-@GatiSense-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/gatisense)
+[![Email](https://img.shields.io/badge/Email-contact@gatisense.ai-red?style=for-the-badge&logo=gmail)](mailto:adityatiwari8022@gmail.com)
 
-### 💬 Get Help
 
 <table align="center">
 <tr>
@@ -720,6 +716,6 @@ gitgraph
 
 ---
 
-<sub>Built with ❤️ by the GatiSense Team | © 2024 GatiSense Project</sub>
+<sub>Built with ❤️ by Aditya Tiwari for AI Fusion 2025 | © 2024 GatiSense Project</sub>
 
 </div>
