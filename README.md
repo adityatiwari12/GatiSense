@@ -1,5 +1,5 @@
 <div align="center">
-
+![Demo](Running_Real-Time_Traffic_Analysis.gif)
 # 🚗 GatiSense 📊
 ### *Intelligent Traffic Monitoring & Density Alert System*
 
